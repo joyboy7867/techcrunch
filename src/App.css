@@ -1,12 +1,91 @@
 .App {
   text-align: center;
+  background-color: #041627;
+  
+}
+
+.title{
+ 
+ width: 60%;
+ margin-top: 15%;
+ margin-left: 35%;
+ position: absolute;
+ color: #AFD3E2;
+ font-family: 'Montserrat', sans-serif;
+ text-align: right;
+ 
+}
+.intro{
+  position: absolute;
+  width: 50%;
+  height: 10em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left:25%;
+  color: #AFD3E2;
+  font-family: 'Montserrat', sans-serif;
+}
+.card-body{
+  background-color:#AFD3E2; ;
+}
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand{
+  font-size: x-large;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.nav-link:hover{
+  font-size: larger;
+  
+}
+.btn-lg{
+  background-color: black;
+}
+.cont{
+  /* background-image: url('./pexels-loïc-dgoth-12602063.jpg'); */
+  backface-visibility: visible;
+  background-color: #041627eb;
+  background-size: cover;
+  width: 100%;
+  height: 30em;
+  
+}
+h1{
+  font-size: 50px; 
+  
+}
+.today{
+  color: black;
+  font-family: cursive;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.navbar{
+  background-color: #041627eb;
+}
+h4{
+  color: white;
+}
+.ground{
+  background-image: url("./3648482.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40em;
+}
+.carbback{
+  background-color: #146C94;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+button{
+  margin-bottom: 5%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +113,88 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.card{
+  
+  margin-top: 6%;
+}
+.footer{
+  margin-bottom: 2%;
+  font-size: large;
+}
+.last{
+  height: 50px;
+}
+.row{
+  margin-top: 10%;
+}
+.mainimg{
+  width: 40%;
+  margin-bottom: 100px;
+}
+@media (max-width:993px) {
+  .title{
+    width: 70%;
+    margin-top: 35%;
+    text-align: left;
+    right: 150px;
+    position: absolute;
+    
+    
+  }
+  h1{
+    font-size: xx-large;
+  }
+  
+  .intro{
+    width: 80%;
+   position: absolute;
+   right: 50px;
+   margin-top: 20%;
+   margin-bottom: 15%;
+  }
+  .today{
+    margin-top: 10%;
+  }
+}
+
+
+
+@media (max-width:320px) {
+  .title{
+    width: 60%;
+    margin-top: 35%;
+    text-align: left;
+    right: 120px;
+    position: absolute;
+    
+    
+  }
+  h1{
+    font-size: large;
+  }
+  h2{
+    font-size:large;
+  }
+  .about{
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  
+  .intro{
+    width: 80%;
+   position: absolute;
+   right: 50px;
+   margin-top: 20%;
+   margin-bottom: 25%;
+   font-size: large;
+  }
+  .today{
+    margin-top: 20%;
+  }
+  .footer{
+    font-size: small;
   }
 }
