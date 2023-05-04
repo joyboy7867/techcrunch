@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import Front from './Front';
 import Front2 from './Front2';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   
@@ -39,7 +39,7 @@ function App() {
   return (
     <div  className="App">
       
-      <BrowserRouter>
+      <HashRouter>
       <Navbar togglemode={toggle} lab={lab}/>
       <Front/>
       <Front2/>
@@ -55,7 +55,7 @@ function App() {
       
       </Routes>
       <Footer/>
-      </BrowserRouter>
+      </HashRouter>
       
       
     </div>
