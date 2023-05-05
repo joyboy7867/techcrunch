@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import Front from './Front';
 import Front2 from './Front2';
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
   
@@ -39,12 +39,12 @@ function App() {
   return (
     <div  className="App">
       
-      <HashRouter>
+      <BrowserRouter basename='/reactapp'>
       <Navbar togglemode={toggle} lab={lab}/>
       <Front/>
       <Front2/>
       <Routes>
-      <Route path="/"element={ <Comp key={'general'} category={'general'}/>}/>
+      <Route path="/reactapp"element={ <Comp key={'general'} category={'general'}/>}/>
       <Route path="/technology"element={ <Comp key={'technology'} category={'technology'}/>}/>
       <Route path="/business"element={ <Comp key={'business'} category={'business'}/>}/>
       <Route path="/science"element={ <Comp key={'science'} category={'science'}/>}/>
@@ -55,7 +55,7 @@ function App() {
       
       </Routes>
       <Footer/>
-      </HashRouter>
+      </BrowserRouter>
       
       
     </div>
