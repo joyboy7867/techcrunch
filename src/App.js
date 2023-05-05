@@ -39,12 +39,12 @@ function App() {
   return (
     <div  className="App">
       
-      <BrowserRouter basename='/reactapp'>
+      <BrowserRouter basename='/techcrunch'>
       <Navbar togglemode={toggle} lab={lab}/>
       <Front/>
       <Front2/>
       <Routes>
-      <Route path="/reactapp"element={ <Comp key={'general'} category={'general'}/>}/>
+      <Route path="/techcrunch"element={ <Comp key={'general'} category={'general'}/>}/>
       <Route path="/technology"element={ <Comp key={'technology'} category={'technology'}/>}/>
       <Route path="/business"element={ <Comp key={'business'} category={'business'}/>}/>
       <Route path="/science"element={ <Comp key={'science'} category={'science'}/>}/>
